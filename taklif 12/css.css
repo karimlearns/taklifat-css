@@ -1,0 +1,266 @@
+/* div {
+    background-color: #eee;
+    width: 100px;
+    height: 100px;
+    border-top: solid orange 0px;
+    border-right: solid orange 3px;
+    border-bottom: solid rgb(100, 180, 234) 0px;
+    border-left: solid rgb(100, 180, 234) 3px;
+    border-radius: 50%;
+    font-size: large;
+    color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+
+taklif 2
+
+
+.parent {
+    background-color: #eee;
+    width: 600px;
+    height: 300px;
+    margin-left: calc((100% - 600px)/2);
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+
+.parent div {
+    text-align: center;
+    height: 30px;
+    margin: 10px 0 10px;
+    padding-top: 15px;
+    background-color: red;
+    color: white;
+    flex-basis: calc(540px / 3);
+}
+
+taklif 3
+
+.parent {
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    margin-left: calc((100% - 600px)/2);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six {
+    background-color: rgb(25, 87, 50);
+    color: white;
+    flex-basis: calc(480px/3);
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.one {
+    order: 6;
+    align-self: flex-end;
+}
+
+.two {
+    order: 5;
+}
+
+.three {
+    order: 2;
+    align-self: flex-start;
+}
+
+.four {
+    order: 3;
+
+}
+
+.five {
+    order: 4;
+}
+
+.six {
+    order: 1;
+}
+
+taklif 4
+
+.parent {
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    margin: calc((100% - 600px)/2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.one,
+.two,
+.three {
+    background-color: rgb(23, 97, 23);
+    height: calc(340px/3);
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.two {
+    align-self: flex-start;
+    width: calc(560px/2);
+} 
+
+taklif 5
+
+.parent {
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    margin-left: calc((100% - 600px)/2);
+    display: flex;
+    justify-content: space-between;
+}
+
+.one,
+.two,
+.three,
+.four {
+    flex-basis: calc(400px / 2);
+    background-color: beige;
+    margin-right: calc(200px/3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one {
+    background-color: blueviolet;
+    align-self: normal;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 150px;
+}
+
+.two {
+    background-color: orange;
+    align-self: normal;
+    margin-top: 10px;
+    margin-bottom: 150px;
+}
+
+.three {
+    background-color: greenyellow;
+    align-self: normal;
+    margin-bottom: 10px;
+    margin-top: 150px;
+}
+
+.four {
+    background-color: burlywood;
+    align-self: normal;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 150px;
+}
+
+taklif 6 */
+
+:root {
+    --maincolor: #dedede;
+}
+
+.page {
+    background-color: #eee;
+}
+
+.header {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+}
+
+.logo {
+    background-color: var(--maincolor);
+    align-self: center;
+    margin: 10px;
+    padding: 15px;
+}
+
+.links {
+    background-color: var(--maincolor);
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: calc((100% - 120px));
+}
+
+.links li {
+    list-style: none;
+    padding: 0px;
+    margin: 10px;
+    display: inline;
+    align-self: center;
+}
+
+.main-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.content {
+    background-color: var(--maincolor);
+    flex-basis: 70%;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 300px;
+    padding: 10px;
+}
+
+.sidebar {
+    flex-basis: 30%;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: var(--maincolor);
+    height: 300px;
+    padding: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: var(--maincolor);
+    padding: 10px;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}

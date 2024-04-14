@@ -1,0 +1,27 @@
+.one {
+    background-color: red;
+    color: white;
+}
+
+.two {
+    background-color: #eee;
+    width: 100px;
+    height: 100px;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+.ch:checked+label {
+    color: red;
+}
+
+a:visited {
+    color: blue;
+}

@@ -1,0 +1,47 @@
+/* taklif 1;
+
+div:nth-child(3n+1) {
+    color: red;
+}
+
+taklif 2;
+
+.parent>:nth-child(2) {
+    color: red;
+}
+
+taklif 3;
+
+.parent>:only-child {
+    color: red;
+}
+
+taklif 4;
+
+body>div[title] {
+    color: red;
+}
+
+taklif 5;
+
+body div:nth-child(2)>[title] {
+    color: red;
+}
+
+taklif 6;
+
+div div:nth-last-of-type(2) {
+    color: red;
+}
+
+taklif 7;
+
+div:first-of-type div:nth-child(5) {
+    color: red;
+}
+
+taklif 8;
+
+div div+div p:first-of-type {
+    color: red;
+} */

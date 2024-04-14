@@ -1,0 +1,66 @@
+/* taklif 1
+
+div {
+    width: 600px;
+    background-color: #eee;
+    margin-left: calc((100% - 600px)/2);
+    border-left: 5px #d35400 solid;
+    border-right: 5px #8e44ad solid;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+div::before {
+    content: "";
+    width: 645px;
+    height: 5px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: linear-gradient(to right, #d35400 20%, #2980b2 20%, #2980b2 40%, #27ae60 40%, #27ae60 60%, #c0392b 60%, #c0392b 80%, #8e44ad 80%);
+}
+
+div::after {
+    content: "";
+    width: 645px;
+    height: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-image: linear-gradient(to right, #d35400 20%, #2980b2 20%, #2980b2 40%, #27ae60 40%, #27ae60 60%, #c0392b 60%, #c0392b 80%, #8e44ad 80%);
+}
+
+div::first-letter {
+    content: "";
+    color: red;
+}
+
+taklif 2 
+
+div {
+    width: 600px;
+    position: relative;
+    margin-left: calc((100% - 600px)/2);
+}
+
+input {
+    display: block;
+    margin-bottom: 20px;
+    border: none;
+    width: 100%;
+    background-color: #eee;
+    padding: 10px;
+    caret-color: #d35400;
+}
+
+div::after {
+    content: "";
+    width: 103%;
+    height: 2px;
+    position: absolute;
+    top: 35px;
+    left: 1px;
+    background-image: linear-gradient(to right, #d35400 50%, #27ae60 50%);
+} */

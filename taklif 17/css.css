@@ -1,0 +1,392 @@
+/* taklif 1
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+div {
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -25px -25px;
+    border: 4px solid #D32F2F;
+    border-left-color: transparent;
+    animation-name: border-one;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes border-one {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+div::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -35px -35px;
+    border: 4px solid blue;
+    border-top-color: transparent;
+    animation-name: border-two;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    z-index: -1;
+}
+
+@keyframes border-two {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+div::after {
+    content: "";
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -40px -40px;
+    border: 4px solid orange;
+    border-right-color: transparent;
+    animation-name: border-three;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    z-index: -1;
+}
+
+@keyframes border-three {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+div div::after div::before:hover {
+    animation-play-state: paused;
+}
+
+taklif 2
+
+* {
+    box-sizing: border-box;
+}
+
+.div {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #1E88E5;
+    border-radius: 50%;
+    margin: 50px auto;
+    border-bottom-color: transparent;
+    position: relative;
+    animation-name: border-one;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+div:hover {
+    animation-play-state: running;
+}
+
+div::before {
+    content: "";
+    width: 58px;
+    height: 58px;
+    background-color: transparent;
+    border: 2px solid #FB8C00;
+    border-radius: 50%;
+    margin: 50px auto;
+    border-bottom-color: transparent;
+    position: absolute;
+    left: -8px;
+    top: -58px;
+    animation-name: border-two;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+div:hover::before {
+    animation-play-state: running;
+}
+
+div::after {
+    content: "";
+    width: 66px;
+    height: 66px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: 50px auto;
+    border-bottom-color: transparent;
+    position: absolute;
+    left: -12px;
+    top: -62px;
+    animation-name: border-three;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+div:hover::after {
+    animation-play-state: running;
+}
+
+@keyframes border-one {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes border-two {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes border-three {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+taklif 3
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+}
+
+span {
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    border: 2px solid black;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    animation-name: noir;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes noir {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+taklif 4 */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.parent-one {
+    width: 70px;
+    height: 100px;
+    background-color: black;
+    margin: 50px;
+    position: relative;
+}
+
+.parent-one::before {
+    content: "";
+    width: 50px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    top: 60px;
+    margin: 0;
+}
+
+.parent-one::after {
+    content: "";
+    width: 50px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    top: 20px;
+    margin: 0;
+}
+
+.parent-one .square {
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    margin: 5px;
+    animation-name: square;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    left: 50px;
+    animation-fill-mode: backwards;
+}
+
+@keyframes square {
+    0% {
+        transform: translateX(0px);
+    }
+
+    10% {
+        transform: translateX(-50px);
+    }
+
+    20% {
+        transform: translate(-50px, 40px);
+    }
+
+    30% {
+        transform: translate(0px, 40px);
+    }
+
+    40% {
+        transform: translate(-50px, 40px);
+    }
+
+    50% {
+        transform: translate(-50px, 40px);
+    }
+
+    60% {
+        transform: translate(-50px, 80px);
+    }
+
+    70% {
+        transform: translate(0px, 80px);
+    }
+
+    80% {
+        transform: translate(-50px, 80px);
+    }
+
+    90% {
+        transform: translate(-50px, 0px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+.parent-two {
+    width: 70px;
+    height: 100px;
+    background-color: black;
+    margin-left: 150px;
+    margin-top: -150px;
+    position: relative;
+}
+
+.parent-two::before {
+    content: "";
+    width: 50px;
+    height: 80px;
+    background-color: rgb(255 255 255);
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+}
+
+.parent-two .square-two {
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    margin: 5px;
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    animation-name: square-l;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    opacity: 0;
+}
+
+@keyframes square-l {
+    0% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+    35% {
+        transform: translateX(-50px);
+        opacity: 1;
+    }
+
+    70% {
+        transform: translate(-50px, -80px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50px, -80px);
+        opacity: 0.5;
+    }
+}

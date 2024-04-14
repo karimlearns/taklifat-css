@@ -1,0 +1,112 @@
+/* 42 */
+
+/* * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.one {
+    background-color: #eee;
+    width: 200px;
+    height: 100px;
+    /* transition-duration: 1s;
+    transition-delay: 0.2s;
+    transition-property: width;
+    transition-timing-function: ease, ;
+    transition: all 0.5s 2s linear;
+}
+
+.one:hover {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 280px;
+    height: 120px;
+} */
+
+/* 43 ==> important
+
+.one {
+    background-color: #eee !important;
+} */
+
+/* 44 ==> margin collapse 
+
+[1] Only vertical margin collapse
+[2]bigger margin win
+[3] margin collapsing with elements without anything between
+[4] nesting does not prevent collapsing 
+
+.parent {
+    overflow: hidden;
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    background-color: #eee;
+}
+
+.parent .one,
+.parent .two {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.one {
+    background-color: #ddd;
+}
+
+.two {
+    background-color: #aaa;
+}
+
+.up {
+    background-color: red;
+    color: white;
+    height: 90px;
+    margin-bottom: 20px;
+}
+
+.down {
+    background-color: green;
+    color: white;
+    height: 90px;
+    margin-top: 20px;
+} */
+
+/* 45 ==> variable and training
+var(Variable name, fallback value */
+
+:root {
+    --maincolor: blue;
+    --mainpadding: 20px;
+}
+
+.main {
+    background-color: var(--maincolor);
+    color: white;
+    padding: var(--mainpadding);
+}
+
+h2 {
+    color: var(--maincolor);
+    background-color: var(--maincolor);
+    padding: var(--mainpadding);
+}
+
+p {
+    color: var(--maincolor);
+    border: 2px solid var(--maincolor);
+    padding: var(--mainpadding);
+}
+
+a:hover {
+    color: var(--maincolor);
+}
+
+.local {
+    --maincolor: black;
+    background-color: var(--maincolor);
+    color: white;
+}

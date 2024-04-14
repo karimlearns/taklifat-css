@@ -1,0 +1,87 @@
+/* Create Your Framework;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.parent {
+    position: relative;
+    background-color: #eee;
+    margin: 20px auto;
+    width: 1200px;
+    height: 200px;
+}
+
+.parent div {
+    background-color: green;
+    color: white;
+}
+
+.product {
+    background-color: red;
+    color: white;
+}
+
+.center-position {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% -50%);
+}
+
+.circle-100 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.circle-200 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+CSS Global Values
+    - inherit
+    - initial
+    - unset
+    ---- if Inherit => inherit
+    ---- if Not => initial
+    - revert CSS Level [4]
+    - All
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+div {
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: #eee;
+    padding: 20px;
+    margin: 5px;
+    border: 2px solid black;
+}
+
+The End And How To Master HTML And CSS
+
+=================
+== What is Next==
+=================
+- 4 Practical Design
+- Html + CSS Tutorials
+- CSS Battle
+- front-End Mentors
+- Elzero Challengers
+- Practice Practice Practice
+
+*/

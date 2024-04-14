@@ -1,0 +1,74 @@
+/* 38 */
+/* Vendor Prefixes 
+-webkit- ==> Chrome; Safari; New Opera Version
+-moz- ==> firefox
+-ms- ==> Ie; Edge.
+-o- ==> Old Version Of Opera
+
+website: can i use.com
+*/
+/*
+.class {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+} */
+
+/*
+[1]  most of users is using modern browsers
+[2]  vs code addon to add prefix
+[3]  task runner
+*/
+
+/* 39 
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 20px auto;
+    border-radius: 50%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    outline: 2px solid red;
+}
+*/
+
+/* 40 
+
+H-Shadow / V-Shadow / Blur / Spread / Color / Inset
+
+div {
+    padding: 20px;
+    background-color: #eee;
+    margin: 20px auto;
+    width: 300px;
+    box-shadow: 0 0 10px 0 #ddd, 0 0 10px 0 #000;
+} */
+
+/* 41= The Box Model And Box Sizing */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.parent {
+    width: 600px;
+    overflow: hidden;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ddd;
+}
+
+.one {
+    background-color: #eee;
+    width: 300px;
+    float: left;
+    padding: 10px;
+    border: 10px solid red;
+    box-sizing: border-box;
+}

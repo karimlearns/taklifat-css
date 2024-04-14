@@ -1,0 +1,164 @@
+/* div {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.green {
+    background-color: green;
+    z-index: 3;
+    left: 30px;
+    top: 30px;
+}
+
+.red {
+    background-color: red;
+    z-index: 4;
+    left: 40px;
+    top: 40px;
+}
+
+.blue {
+    background-color: blue;
+    z-index: 2;
+    left: 20px;
+    top: 20px;
+}
+
+.black {
+    background-color: black;
+    z-index: 1;
+    top: 30px;
+    left: 20px;
+}
+
+taklif 2
+
+div {
+    background-color: #eee;
+    width: 400px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    border-right: 2px solid blue;
+    border-left: 2px solid blue;
+}
+
+.top-left,
+.bottom-left,
+.top-right,
+.bottom-right {
+    background-color: rgb(0, 128, 255);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: white;
+    position: absolute;
+}
+
+.top-left {
+    position: relative;
+    right: 260px;
+    bottom: 80px;
+    border-right: 3px solid red;
+}
+
+.bottom-left {
+    position: relative;
+    right: 295px;
+    top: 25px;
+    border-right: 3px solid red;
+}
+
+.top-right {
+    position: relative;
+    left: 114px;
+    bottom: 80px;
+    border-left: 3px solid red;
+}
+
+.bottom-right {
+    position: relative;
+    left: 80px;
+    top: 25px;
+    border-left: 3px solid red;
+}
+
+taklif 3 
+
+.html,
+.css,
+.javascript {
+    background-color: #eee;
+    margin: 20px;
+    padding: 10px;
+    width: 400px;
+    list-style-type: none;
+}
+
+.slim,
+.pugjs,
+.haml,
+.sass,
+.less,
+.post-css,
+.vuejs,
+.sveltejs {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+taklif 4
+
+table {
+    background-color: #d6d6d6;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+table tr td {
+    border: 1px solid #f6f6f6;
+    border-spacing: 1px;
+    text-align: center;
+    padding: 10px;
+}
+
+thead tr td {
+    background-color: #686868;
+    color: white;
+    padding: 10px;
+}
+
+.one,
+.three,
+.five,
+.seven,
+.nine,
+.eleven {
+    background-color: #55b1d6;
+    color: white;
+    margin: 5px;
+    border: none;
+    padding: 5px;
+}
+
+.two,
+.four,
+.sex,
+.eight,
+.ten,
+.twelve {
+    background-color: #e365bf;
+    color: white;
+    margin: 5px;
+    border: none;
+    padding: 5px;
+} */

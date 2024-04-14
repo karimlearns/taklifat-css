@@ -1,0 +1,62 @@
+/* div {
+    background-color: white;
+    border: 2px solid red;
+    padding: 10px;
+    margin: 20px;
+}
+
+div p {
+    background-color: #eee;
+    border: inherit;
+    margin: 10px;
+    padding: inherit;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.div {
+    border-color: green;
+}
+
+taklif 2 
+
+p {
+    background-color: #eee;
+    padding: 10px;
+    margin: 20px;
+}
+
+.one {
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.two {
+    text-transform: capitalize;
+    font-family: 'Cairo', sans-serif;
+}
+
+.three {
+    text-transform: capitalize;
+    font-family: 'Jomhuria';
+} 
+
+taklif 3 */
+
+.one {
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-size: 3.125rem;
+}
+
+.two {
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+}
+
+.three {
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-size: 1.875rem;
+}

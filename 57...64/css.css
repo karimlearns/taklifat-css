@@ -1,0 +1,147 @@
+/* 
+Grip
+parent:
+--display: grid / inline gred
+--grid-template-columns ==> number of columns in => [px, %, auto, traction, repeat(..,..), mix]
+--grid-template-rows ==> [number of rows height in] => [px, %, auto, traction, repeat(..,..), mix]
+--gap ==> [column gap] [row gap]
+--Align Content
+--Justify Content
+child:
+--Grid Column (1 / 5) (span 5)
+--Grid Row (1 / 5) (span 5)
+--Grid Area ==> [grid row start] [grid column start] [grid row end] [grid column end]
+--Trainings
+
+
+* {
+    box-sizing: border-box;
+}
+
+.parent {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.parent div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+.page {
+    height: 100vh;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 50px auto 50px;
+    grid-template-areas:
+        "logo logo nav nav nav nav nav nav nav nav"
+        "cont cont cont cont cont cont cont cont side side"
+        "foot foot foot foot foot foot foot foot foot foot";
+}
+
+h2 {
+    grid-area: logo;
+    background-color: red;
+    color: white;
+}
+
+nav {
+    grid-area: nav;
+    background-color: blue;
+    color: white;
+}
+
+section {
+    grid-area: cont;
+    background-color: yellow;
+    color: white;
+}
+
+aside {
+    grid-area: side;
+    background-color: green;
+    color: white;
+}
+
+footer {
+    grid-area: foot;
+    background-color: brown;
+    color: white;
+} 
+
+ Grid - Child - Grid Column And Grid Row
+
+* {
+    box-sizing: border-box;
+}
+
+.parent {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.parent div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}  
+
+Grid - Child - Grid Area And Trainings */
+
+* {
+    box-sizing: border-box;
+}
+
+.parent {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #eee;
+    display: grid;
+    grid-template-areas: "head head head head head" "cont cont cont cont cont";
+    gap: 10px 10px;
+}
+
+.parent div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}

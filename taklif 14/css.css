@@ -1,0 +1,305 @@
+/* taklif 1
+
+* {
+    box-sizing: border-box;
+}
+
+
+.grid {
+    background-color: #ddd;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 15% 81%;
+    gap: 13px 13px;
+    counter-reset: counter;
+}
+
+.grid div {
+    background-color: darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid div::before {
+    content: "element";
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.grid div::after {
+    counter-increment: counter;
+    content: counter(counter);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+taklif 2
+
+* {
+    box-sizing: border-box;
+}
+
+
+.layout {
+    height: 100vh;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+    grid-template-rows: 50px auto 50px;
+    grid-template-areas: "header header header header header header header header header header" "sec sec sec sec sec sec sec side side side" "foot foot foot foot foot foot foot foot foot foot";
+}
+
+header {
+    grid-area: header;
+    background-color: dodgerblue;
+    display: flex;
+    align-items: center;
+}
+
+header::before {
+    content: "header";
+    color: white;
+    padding: 20px;
+}
+
+section {
+    grid-area: sec;
+    background-color: tomato;
+}
+
+section::before {
+    content: "section";
+    color: white;
+    padding: 20px;
+}
+
+aside {
+    grid-area: side;
+    background-color: darkgray;
+}
+
+aside::before {
+    content: "aside";
+    color: white;
+    padding: 20px;
+}
+
+footer {
+    grid-area: foot;
+    background-color: lightseagreen;
+    display: flex;
+    align-items: center;
+}
+
+footer::before {
+    content: "footer";
+    color: white;
+    padding: 20px;
+}
+
+taklif 3 
+
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 2% 46% 46% 2%;
+    grid-template-rows: 93% 5%;
+    gap: 1% 1%;
+}
+
+.grid div {
+    background-color: darkolivegreen;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+taklif 4
+
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto auto auto auto auto auto;
+    gap: 20px;
+}
+
+.one {
+    grid-column: 1/11;
+    order: 8;
+}
+
+.two {
+    grid-column: 1/8;
+    order: 2;
+}
+
+.three {
+    grid-column: 8/11;
+    order: 3;
+}
+
+.four {
+    grid-column: 1/4;
+    order: 4;
+}
+
+.five {
+    grid-column: 4/11;
+    grid-row: 3/6;
+    order: 5;
+}
+
+.six {
+    grid-column: 1/4;
+    order: 6;
+}
+
+.seven {
+    grid-column: 1/4;
+    order: 7;
+}
+
+.eight {
+    grid-column: 1/11;
+    order: 1;
+}
+
+.grid div {
+    background-color: rgb(65, 132, 225);
+    color: white;
+}
+
+taklif 5
+
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    align-content: space-between;
+    gap: 20px;
+}
+
+.grid div {
+    background-color: lightcoral;
+    text-align: center;
+    color: white;
+}
+
+taklif 6 */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+}
+
+.parent {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px 20px;
+}
+
+.osama,
+.ahmed,
+.shady,
+.mohamed,
+.mahmoud,
+.ezz,
+.moh,
+.ibrahim,
+.gamal,
+.eman {
+    border-bottom: 2px red solid;
+    background-color: white;
+    padding: 10px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.mahmoud,
+.shady,
+.ibrahim {
+    background-color: black;
+    color: white;
+}
+
+.osama {
+    grid-column: 1/7;
+}
+
+.ahmed {
+    grid-column: 7/10;
+}
+
+.shady {
+    grid-column: 10/13;
+    grid-row: 1/4;
+}
+
+.mohamed {
+    grid-column: 1/4;
+    grid-row: 2/4;
+}
+
+.mahmoud {
+    grid-column: 4/10;
+}
+
+.ezz {
+    grid-column: 4/10;
+}
+
+.moh {
+    grid-column: 1/4;
+}
+
+.ibrahim {
+    grid-column: 4/7;
+}
+
+.gamal {
+    grid-column: 7/10;
+}
+
+.eman {
+    grid-column: 10/13;
+}
+
+input {
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+    position: absolute;
+    top: 60px;
+    text-transform: capitalize;
+}
+
+.bold {
+    font-weight: bold;
+}

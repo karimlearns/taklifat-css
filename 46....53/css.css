@@ -1,0 +1,69 @@
+/* flexible box ==> 46
+for parent
+--display: flex ==> to start flex box
+-- flex direction ==> row default value
+--flex wrap : nowrap ==> default value
+--flex-flow: [flex-direction] + [flex wrap]
+
+47 ==> justify-content
+justify-content: flex-start => default value
+
+48 ==> Align items
+align items: stretch ==> default value ==> to centre
+
+48 ==> align content
+align content: stretch ==> default value
+
+50 ==> lex Box Child - Grow, Shrink, Order
+flex grow: 0 ==> default value
+flex shrink: 1 ==> default value
+order: 0 ==> default value
+
+51 ==> Flex Box Child - Flex Basis, Flex Shorthand
+Flex Basis: auto => default value (weidth)
+flex: [flex grow] [flex shring] [flex basis] 0 1 auto
+
+52 ==> Flex Box Child - Align Self, Games, Task
+align self ==> auto: default value
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+.flex {
+    background-color: #eee;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.flex div {
+    background-color: red;
+    color: white;
+    width: calc(98% / 3);
+    text-align: center;
+    padding: 20px;
+}
+
+.float {
+    overflow: hidden;
+    background-color: #eee;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.float div {
+    background-color: red;
+    color: white;
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+}
+
+*\ 47===>Flex Box Parent - Justify-Content */

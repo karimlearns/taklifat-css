@@ -1,0 +1,50 @@
+/* 
+CSS Selectors Reference Part 1:
+
+-- Class-name
+-- #id-name
+-- .parent .child
+-- Class-one.class-two
+-- .class-name div, .class-name p
+-- Element .class-name
+-- .parent > child => direct child
+
+CSS Selectors Reference Part 2:
+
+-- Element + other element => [div + p]
+-- Element ~ other element => [div ~ p]
+-- [Attribute]
+-- Element [Attribute]
+-- [Attribute=value]
+-- Element [Attribute=value] => input [Type="submit"]
+-- [Attribute~=value] => Contain a word
+-- [Attribute*=value] => Contain a string
+-- [Attribute^=value] => Start with a string
+
+CSS Selectors Reference Part 3
+
+-- :first-child
+-- :last-child
+-- :first-of-type
+-- :last-of-type
+-- :only-child
+
+CSS Selectors Reference Part 4
+
+-- :not(selectors)
+-- :nth-child(n)
+-- :nth-last-child(n)
+-- :nth-of-type(n)
+-- :nth-last-of-type(n)
+
+CSS Selectors Reference Part 5:
+
+-- :root
+-- :cheked
+-- :empty
+-- :disabled
+-- :focus
+-- :selection
+-- :placeholder
+
+*/

@@ -1,0 +1,71 @@
+/* taklif 1  */
+.parent {
+    background-color: #eee;
+    text-align: center;
+    text-transform: capitalize;
+    height: 300px;
+    width: 600px;
+    margin: 80px;
+    padding: 5px;
+}
+
+
+.son {
+    background-color: #ddd;
+    text-align: center;
+    text-transform: capitalize;
+    height: 50px;
+    width: 550px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: inline-block;
+    padding: 5px;
+}
+
+.parent:hover {
+    transition: 0.5s ease-in;
+    margin-top: 50px;
+    position: relative;
+}
+
+.parent:hover .son {}
+
+/* taklif 2
+
+
+* {
+    box-sizing: border-box;
+}
+
+div {
+    position: relative;
+    width: 400px;
+    background-color: #ddd !important;
+    text-align: center !important;
+    font-size: 0px !important;
+    border: none !important;
+}
+
+div::after {
+    position: absolute;
+    left: 180px;
+    top: 10px;
+    content: "elzero";
+    color: black;
+    text-transform: capitalize;
+    font-size: 20px !important;
+} 
+taklif 3
+
+:root {
+    --mainColor: #009688;
+    --mainPadding: 10px;
+}
+
+div {
+    border: 2px solid var(--mainColor, black);
+    color: var(--mainColor, red);
+    padding: var(--mainPadding);
+    margin: var(--mainPadding);
+} */

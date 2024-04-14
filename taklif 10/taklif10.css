@@ -1,0 +1,159 @@
+/* * {
+    box-sizing: border-box;
+}
+
+body {
+    counter-reset: karim;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 50%;
+    text-align: center;
+    padding: 25px;
+    margin: 20px;
+    position: relative;
+    box-shadow: 5px 4px 0px 0px red, -5px -5px 0px 0px blue;
+}
+
+div::after {
+    content: "element";
+    text-transform: capitalize;
+    position: absolute;
+    left: 22px;
+    top: 35px;
+}
+
+div::before {
+    counter-increment: karim;
+    content: counter(karim);
+    background-color: black;
+    color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: -10px;
+    left: 40px;
+    border-radius: 50%;
+}
+
+taklif 2
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 10px 36px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 16px 33px;
+    box-shadow: 0px 0px 7px 1px inset;
+}
+
+taklif 3
+
+* {
+    box-sizing: border-box;
+}
+
+.parent {
+    height: 200px;
+    width: 150px;
+    background-color: #eee;
+    margin: 10px;
+    position: relative;
+}
+
+.one {
+    background-color: #37b1ea;
+    height: 30px;
+    width: 120px;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    padding: 5px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    border-radius: 4px;
+}
+
+.two {
+    background-color: #ddd;
+    height: 120px;
+    width: 120px;
+    text-align: center;
+    S text-transform: capitalize;
+    padding-top: 50px;
+    position: absolute;
+    left: 15px;
+    top: 62px;
+    border-radius: 50%;
+}
+
+.div::before {
+    content: "or";
+    background-color: #37b1ea;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: -31px;
+    top: 89px;
+    padding: 1px;
+
+
+}
+
+.div {
+    height: 200px;
+    width: 150px;
+    background-color: #eee;
+    margin: 10px;
+    display: inline-block;
+    position: absolute;
+    left: 200px;
+    top: 0px;
+}
+
+.parent::after {
+    content: "";
+    height: 200px;
+    width: 1px;
+    background-color: #37b1eabf;
+    position: absolute;
+    right: -23px;
+}
+
+.three {
+    background-color: #37b1ea;
+    height: 30px;
+    width: 120px;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    padding: 5px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    border-radius: 4px;
+}
+
+.four {
+    background-color: #ddd;
+    height: 120px;
+    width: 120px;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 50px;
+    position: absolute;
+    left: 15px;
+    top: 62px;
+    border-radius: 50%;
+}  */
